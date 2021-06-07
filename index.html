@@ -1,0 +1,62 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <script src="script.js"></script>
+    <div class="container cal-container">
+        <div class="row">
+            <div class="col-md-6 leftbox">
+                <h1>Personal Loan eligibility calculator</h1> 
+                <p class="input-form">Date of birth:<input  id="DOB" class="input-box" type="date" name="DOB" value="" onchange="mainfun()" /></p>
+                <p class="input-form">Income:</p><input  id="income" class="input-box" type="text" name="income" value=""  onchange="mainfun()" onkeypress="return isNumber(event)"  required/>
+                <p class="input-form">Expenses:</p><input  id="expenses" class="input-box" type="text" name="expenses" value="" onchange="mainfun()"  onkeypress="return isNumber(event)" required/>
+     
+                
+            </div>
+            <div class="col-md-6 rightbox">
+                <div class="box-logo">
+                    <img src="r1.jpg" alt=""/>
+                </div>
+                <span class="right-title">Your elgible for upto <br>
+                </span>
+                <span id="amount" class="amount">150000</span>
+            </div>
+        </div>
+    </div>
+   
+    
+    <div class="container cal-container">
+        <div class="row">
+            <div class="col-md-12 login-form-1">
+                <br>
+                <h2 >Frequently Asked Questions</h2>
+                <br>
+                <ul>
+                    <li>How to use personal loan eligibility calculator?</li>
+                    <p>Key in your net monthly income, liabilities, and age and check your personal loan eligibility. Your income and liabilities together determine your repayment capacity. If your existing liabilities are moderate you may be eligible for a higher loan amount. Conversely, if your existing liabilities are higher, then your loan eligibility could be lower.</p>
+                    <li>How does the applicant’s income affect personal loan eligibility?</li>
+                    <p>The applicant’s net monthly income, excluding one-time bonuses/incentives etc. in addition to existing EMIs are used to gauge loan eligibility. Simply key in those details and click on calculate.</p>
+                    <li>How does the applicant’s age affect personal loan eligibility?</li>
+                    <p>The applicant’s net monthly income, excluding one-time bonuses/incentives etc. in addition to existing EMIs are used to gauge loan eligibility. Simply key in those details and click on calculate.</p>
+        
+                </ul>
+                
+            </div>
+           
+        </div>
+    </div>
+    
+</body>
+</html>
